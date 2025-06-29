@@ -1,0 +1,49 @@
+body {
+  background: #fce4ec;
+  text-align: center;
+  font-family: Arial, sans-serif;
+  padding: 50px;
+}
+
+h1 {
+  color: #c2185b;
+}
+
+p {
+  font-size: 18px;
+  color: #880e4f;
+}
+
+img {
+  width: 250px;
+  border-radius: 20px;
+  margin: 20px 0;
+}
+
+button {
+  padding: 10px 20px;
+  font-size: 16px;
+  background: #ad1457;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #880e4f;
+}
+
+/* Balloons */
+body::before {
+  content: "🎈 🎈 🎈 🎈 🎈 🎈 🎈 🎈";
+  display: block;
+  font-size: 50px;
+  animation: float 4s infinite;
+}
+
+@keyframes float {
+  0% { transform: translateY(0); }
+  50% { transform: translateY(-20px); }
+  100% { transform: translateY(0); }
+}
